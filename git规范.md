@@ -72,3 +72,36 @@ git merge develop
 ```bash
 git branch -d feature
 ```
+
+# Angular Git Commit 规范
+
+## type 类型
+
+- feat 新增功能
+- fix 修复 bug
+- docs 修改文档
+- style 代码格式、注释
+- refactor 普通更改既不修 bug 也不增加新功能
+- perf 改进性能的更改
+- test 修改或增加测试
+- chore 对构建过程辅助工具和库的更改
+- delete 删除功能或文件
+- modify 修改功能
+- ci 自动化流程配置
+- revert 回滚到上一个版本
+
+# git 提交流程
+
+- Fork 你想要贡献的项目
+- git clone 你 Fork 的项目到本地
+- git checkout -b 创建并切换到贡献分支
+
+1. git add 将更改的内容提交到暂存区
+2. git commit 将暂存区的内容提交到本地仓库
+3. git pull 拉取远程仓库并于本地仓库合并
+4. 解决合并冲突，再 git add 和 git commit
+5. git push 解决冲突后将最新的更改推送到远程
+
+- 创建 Pull Request，提供详细的描述，解释你做了什么
+- 项目维护者审查你的 Pull Request
+- 审查通过接收合并
